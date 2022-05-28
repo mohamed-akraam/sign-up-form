@@ -1,12 +1,18 @@
 :root {
     box-sizing: border-box;
     font-size: 100%;
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    border: none;
+    border: none; */
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono", "Courier New", monospace;
 }
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/font/Norse-Bold.otf);
+}
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -15,3 +21,50 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.img-container {
+    display: flex;
+}
+
+.bg-img {
+    width: 40vw;
+    height: 100vh;
+}
+
+.odin-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 200px;
+}
+
+.odin-container img {
+    width: 7vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-container > p {
+    font-family: Norse-Bold;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.img-container > div:last-child {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    color: white;
+    bottom: 0;
+    font-size: 0.8rem;
+}
+
+a {
+    color: white;
+}
+
