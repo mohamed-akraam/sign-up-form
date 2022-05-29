@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css/normalize.css">
     <link rel="stylesheet" href="style.css">
-    
     <title>sign up</title>
 </head>
 <body>
     <header class="img-container">
         <img src="/img/sharad-bhat-DxuFusZ-33Q-unsplash.jpg" alt="mountain view" class="bg-img">
-        <div class="odin-container">
+        <div class="logo">
             <img src="/img/odin-lined.png" alt="Odin">
             <p>Odin</p>
         </div>
@@ -29,34 +28,41 @@
             <p>You <span>know</span> you want to.</p>
         </div>
 
-        <form action="url" method="post">
-            <div class="form">
-                <p>Let's do this!</p>
-                <div>
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname" name="first_name" required>
-                </div>
-                <div>
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname" name="last_name" required>
-                </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="user_mail" required>
-                </div>
-                <div>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="user_phone">
-                </div>
-                <div>
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="user_pwd" required>
-                </div>
-                <div>
-                    <label for="pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="pwd" name="user_pwd" required>
+        <form action="#">
+            <div class="bg-form">
+                <div class="form-container">
+                    <p>Let's do this!</p>
+                    <div>
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" name="first_name" required>
+                    </div>
+                    <div>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="last_name" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="user_mail" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="user_phone" pattern="[0, 9]" maxlength="15" >
+                    </div>
+
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="user_pwd" required>
+                    </div>
+                    <div>
+                        <label for="pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd" name="user_pwd" required>
+                    </div>
 
                 </div>
+            </div>
+            <div class="footer">
+                <button type="submit" class="btn">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </form>
     </main>
